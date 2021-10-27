@@ -89,51 +89,67 @@ const EditListingDetailsFormComponent = props => (
       const submitInProgress = updateInProgress;
       const submitDisabled = invalid || disabled || submitInProgress;
 
-      const categoryConfig = findConfigForSelectFilter('category', filterConfig);
-      const categorySchemaType = categoryConfig.schemaType;
-      const categories = categoryConfig.options ? categoryConfig.options : [];
-      const categoryLabel = intl.formatMessage({
-        id: 'EditListingDetailsForm.categoryLabel',
+      const styleConfig = findConfigForSelectFilter('style', filterConfig);
+      const styleSchemaType = styleConfig.schemaType;
+      const styles = styleConfig.options ? styleConfig.options : [];
+      const styleLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.styleLabel',
       });
-      const categoryPlaceholder = intl.formatMessage({
-        id: 'EditListingDetailsForm.categoryPlaceholder',
+      const stylePlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.stylePlaceholder',
       });
 
-      const categoryRequired = required(
+      const styleRequired = required(
         intl.formatMessage({
-          id: 'EditListingDetailsForm.categoryRequired',
+          id: 'EditListingDetailsForm.styleRequired',
         })
       );
 
-      const sizeConfig = findConfigForSelectFilter('size', filterConfig);
-      const sizeSchemaType = sizeConfig ? sizeConfig.schemaType : null;
-      const sizes = sizeConfig && sizeConfig.options ? sizeConfig.options : [];
-      const sizeLabel = intl.formatMessage({
-        id: 'EditListingDetailsForm.sizeLabel',
+      const materialConfig = findConfigForSelectFilter('material', filterConfig);
+      const materialSchemaType = materialConfig ? materialConfig.schemaType : null;
+      const materials = materialConfig && materialConfig.options ? materialConfig.options : [];
+      const materialLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.materialLabel',
       });
-      const sizePlaceholder = intl.formatMessage({
-        id: 'EditListingDetailsForm.sizePlaceholder',
+      const materialPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.materialPlaceholder',
       });
 
-      const sizeRequired = required(
+      const materialRequired = required(
         intl.formatMessage({
-          id: 'EditListingDetailsForm.sizeRequired',
+          id: 'EditListingDetailsForm.materialRequired',
         })
       );
 
-      const brandConfig = findConfigForSelectFilter('brand', filterConfig);
-      const brandSchemaType = brandConfig ? brandConfig.schemaType : null;
-      const brands = brandConfig && brandConfig.options ? brandConfig.options : [];
-      const brandLabel = intl.formatMessage({
-        id: 'EditListingDetailsForm.brandLabel',
+      const colorConfig = findConfigForSelectFilter('color', filterConfig);
+      const colorSchemaType = colorConfig ? colorConfig.schemaType : null;
+      const colors = colorConfig && colorConfig.options ? colorConfig.options : [];
+      const colorLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.colorLabel',
       });
-      const brandPlaceholder = intl.formatMessage({
-        id: 'EditListingDetailsForm.brandPlaceholder',
+      const colorPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.colorPlaceholder',
       });
 
-      const brandRequired = required(
+      const colorRequired = required(
         intl.formatMessage({
-          id: 'EditListingDetailsForm.brandRequired',
+          id: 'EditListingDetailsForm.colorRequired',
+        })
+      );
+
+      const roomConfig = findConfigForSelectFilter( 'room', filterConfig);
+      const roomSchemaType = roomConfig ? roomConfig.schemaType : null;
+      const rooms = roomConfig && roomConfig.options ? roomConfig.options : [];
+      const roomLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.roomLabel',
+      });
+      const roomPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.roomPlaceholder',
+      });
+
+      const roomRequired = required(
+        intl.formatMessage({
+          id: 'EditListingDetailsForm.roomRequired',
         })
       );
 
@@ -163,33 +179,43 @@ const EditListingDetailsFormComponent = props => (
             validate={composeValidators(required(descriptionRequiredMessage))}
           />
           <CustomFieldEnum
-            id="category"
-            name="category"
-            options={categories}
-            label={categoryLabel}
-            placeholder={categoryPlaceholder}
-            validate={categoryRequired}
-            schemaType={categorySchemaType}
+            id="style"
+            name="style"
+            options={styles}
+            label={styleLabel}
+            placeholder={stylePlaceholder}
+            validate={styleRequired}
+            schemaType={styleSchemaType}
           />
 
           <CustomFieldEnum
-            id="size"
-            name="size"
-            options={sizes}
-            label={sizeLabel}
-            placeholder={sizePlaceholder}
-            validate={sizeRequired}
-            schemaType={sizeSchemaType}
+            id="material"
+            name="material"
+            options={materials}
+            label={materialLabel}
+            placeholder={materialPlaceholder}
+            validate={materialRequired}
+            schemaType={materialSchemaType}
           />
 
           <CustomFieldEnum
-            id="brand"
-            name="brand"
-            options={brands}
-            label={brandLabel}
-            placeholder={brandPlaceholder}
-            validate={brandRequired}
-            schemaType={brandSchemaType}
+            id="color"
+            name="color"
+            options={colors}
+            label={colorLabel}
+            placeholder={colorPlaceholder}
+            validate={colorRequired}
+            schemaType={colorSchemaType}
+          />
+
+          <CustomFieldEnum
+            id="room"
+            name="room"
+            options={rooms}
+            label={roomLabel}
+            placeholder={roomPlaceholder}
+            validate={roomRequired}
+            schemaType={roomSchemaType}
           />
 
           <Button

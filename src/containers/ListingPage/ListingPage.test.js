@@ -29,11 +29,11 @@ const noop = () => null;
 const customConfig = {
   filters: [
     {
-      id: 'category',
-      label: 'Category',
+      id: 'style',
+      label: 'Style',
       type: 'SelectSingleFilter',
       group: 'secondary',
-      queryParamName: 'pub_category',
+      queryParamName: 'pub_style',
       config: {
         options: [{ key: 'cat1', label: 'Cat 1' }, { key: 'cat2', label: 'Cat 2' }],
       },

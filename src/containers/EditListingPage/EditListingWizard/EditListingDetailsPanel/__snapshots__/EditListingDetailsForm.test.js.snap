@@ -53,14 +53,14 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
     className="root detailsSelect"
   >
     <label
-      htmlFor="category"
+      htmlFor="style"
     >
-      EditListingDetailsForm.categoryLabel
+      EditListingDetailsForm.styleLabel
     </label>
     <select
       className="select"
-      id="category"
-      name="category"
+      id="style"
+      name="style"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -70,25 +70,43 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         disabled={true}
         value=""
       >
-        EditListingDetailsForm.categoryPlaceholder
+        EditListingDetailsForm.stylePlaceholder
       </option>
       <option
-        key="men"
-        value="men"
+        key="antique"
+        value="antique"
       >
-        Men
+        Antique
       </option>
       <option
-        key="women"
-        value="women"
+        key="contemporary"
+        value="contemporary"
       >
-        Women
+        Contemporary
       </option>
       <option
-        key="kids"
-        value="kids"
+        key="mid-century-modern"
+        value="mid-century-modern"
       >
-        Kids
+        Mid-Century Modern
+      </option>
+      <option
+        key="modern"
+        value="modern"
+      >
+        Modern
+      </option>
+      <option
+        key="traditional"
+        value="traditional"
+      >
+        Traditional
+      </option>
+      <option
+        key="vintage"
+        value="vintage"
+      >
+        Vintage
       </option>
     </select>
   </div>
@@ -96,14 +114,14 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
     className="root detailsSelect"
   >
     <label
-      htmlFor="size"
+      htmlFor="material"
     >
-      EditListingDetailsForm.sizeLabel
+      EditListingDetailsForm.materialLabel
     </label>
     <select
       className="select"
-      id="size"
-      name="size"
+      id="material"
+      name="material"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -113,61 +131,61 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         disabled={true}
         value=""
       >
-        EditListingDetailsForm.sizePlaceholder
+        EditListingDetailsForm.materialPlaceholder
       </option>
       <option
-        key="4"
-        value="4"
+        key="bamboo"
+        value="bamboo"
       >
-        4
+        Bamboo
       </option>
       <option
-        key="5"
-        value="5"
+        key="burch"
+        value="burch"
       >
-        5
+        Burch
       </option>
       <option
-        key="6"
-        value="6"
+        key="cherry"
+        value="cherry"
       >
-        6
+        Cherry
       </option>
       <option
-        key="7"
-        value="7"
+        key="mahogany"
+        value="mahogany"
       >
-        7
+        Mahogany
       </option>
       <option
-        key="8"
-        value="8"
+        key="maple"
+        value="maple"
       >
-        8
+        Maple
       </option>
       <option
-        key="9"
-        value="9"
+        key="oak"
+        value="oak"
       >
-        9
+        Oak
       </option>
       <option
-        key="10"
-        value="10"
+        key="painted-wood"
+        value="painted-wood"
       >
-        10
+        Painted Wood
       </option>
       <option
-        key="11"
-        value="11"
+        key="pine"
+        value="pine"
       >
-        11
+        Pine
       </option>
       <option
-        key="12"
-        value="12"
+        key="walnut"
+        value="walnut"
       >
-        12
+        Walnut
       </option>
     </select>
   </div>
@@ -175,14 +193,14 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
     className="root detailsSelect"
   >
     <label
-      htmlFor="brand"
+      htmlFor="color"
     >
-      EditListingDetailsForm.brandLabel
+      EditListingDetailsForm.colorLabel
     </label>
     <select
       className="select"
-      id="brand"
-      name="brand"
+      id="color"
+      name="color"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -192,67 +210,122 @@ exports[`EditListingDetailsForm matches snapshot 1`] = `
         disabled={true}
         value=""
       >
-        EditListingDetailsForm.brandPlaceholder
+        EditListingDetailsForm.colorPlaceholder
       </option>
       <option
-        key="adidas"
-        value="adidas"
+        key="black"
+        value="black"
       >
-        Adidas
+        Black
       </option>
       <option
-        key="air_jordan"
-        value="air_jordan"
+        key="blue"
+        value="blue"
       >
-        Air Jordan
+        Blue
       </option>
       <option
-        key="converse"
-        value="converse"
+        key="green"
+        value="green"
       >
-        Converse
+        Green
       </option>
       <option
-        key="new_balance"
-        value="new_balance"
+        key="grey"
+        value="grey"
       >
-        New Balance
+        Grey
       </option>
       <option
-        key="nike"
-        value="nike"
+        key="orange"
+        value="orange"
       >
-        Nike
+        Orange
       </option>
       <option
-        key="puma"
-        value="puma"
+        key="pink"
+        value="pink"
       >
-        Puma
+        Pink
       </option>
       <option
-        key="ultraboost"
-        value="ultraboost"
+        key="purple"
+        value="purple"
       >
-        Ultraboost
+        Purple
       </option>
       <option
-        key="vans"
-        value="vans"
+        key="red"
+        value="red"
       >
-        Vans
+        Red
       </option>
       <option
-        key="yeezy"
-        value="yeezy"
+        key="yellow"
+        value="yellow"
       >
-        Yeezy
+        Yellow
       </option>
       <option
-        key="other"
-        value="other"
+        key="white"
+        value="white"
       >
-        Other
+        White
+      </option>
+    </select>
+  </div>
+  <div
+    className="root detailsSelect"
+  >
+    <label
+      htmlFor="room"
+    >
+      EditListingDetailsForm.roomLabel
+    </label>
+    <select
+      className="select"
+      id="room"
+      name="room"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        value=""
+      >
+        EditListingDetailsForm.roomPlaceholder
+      </option>
+      <option
+        key="bathroom"
+        value="bathroom"
+      >
+        Bathroom
+      </option>
+      <option
+        key="bedroom"
+        value="bedroom"
+      >
+        Bedroom
+      </option>
+      <option
+        key="dining"
+        value="dining"
+      >
+        Dining
+      </option>
+      <option
+        key="outdoor"
+        value="outdoor"
+      >
+        Outdoor
+      </option>
+      <option
+        key="office"
+        value="office"
+      >
+        Office
       </option>
     </select>
   </div>

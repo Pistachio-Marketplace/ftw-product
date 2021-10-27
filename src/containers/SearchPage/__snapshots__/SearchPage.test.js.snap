@@ -38,25 +38,37 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               "config": Object {
                 "options": Array [
                   Object {
-                    "key": "men",
-                    "label": "Men",
+                    "key": "antique",
+                    "label": "Antique",
                   },
                   Object {
-                    "key": "women",
-                    "label": "Women",
+                    "key": "contemporary",
+                    "label": "Contemporary",
                   },
                   Object {
-                    "key": "kids",
-                    "label": "Kids",
+                    "key": "mid-century-modern",
+                    "label": "Mid-Century Modern",
+                  },
+                  Object {
+                    "key": "modern",
+                    "label": "Modern",
+                  },
+                  Object {
+                    "key": "traditional",
+                    "label": "Traditional",
+                  },
+                  Object {
+                    "key": "vintage",
+                    "label": "Vintage",
                   },
                 ],
                 "schemaType": "enum",
               },
               "group": "primary",
-              "id": "category",
-              "label": "Category",
+              "id": "style",
+              "label": "Style",
               "queryParamNames": Array [
-                "pub_category",
+                "pub_style",
               ],
               "type": "SelectSingleFilter",
             }
@@ -65,7 +77,7 @@ exports[`SearchPageWithList matches snapshot 1`] = `
           idPrefix="SearchFiltersMobile"
           initialValues={[Function]}
           isDesktop={true}
-          key="SearchFiltersMobile.category"
+          key="SearchFiltersMobile.style"
           liveEdit={true}
           showAsPopup={false}
           urlQueryParams={Object {}}
@@ -77,58 +89,58 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               "config": Object {
                 "options": Array [
                   Object {
-                    "key": "4",
-                    "label": "4",
+                    "key": "bamboo",
+                    "label": "Bamboo",
                   },
                   Object {
-                    "key": "5",
-                    "label": "5",
+                    "key": "burch",
+                    "label": "Burch",
                   },
                   Object {
-                    "key": "6",
-                    "label": "6",
+                    "key": "cherry",
+                    "label": "Cherry",
                   },
                   Object {
-                    "key": "7",
-                    "label": "7",
+                    "key": "mahogany",
+                    "label": "Mahogany",
                   },
                   Object {
-                    "key": "8",
-                    "label": "8",
+                    "key": "maple",
+                    "label": "Maple",
                   },
                   Object {
-                    "key": "9",
-                    "label": "9",
+                    "key": "oak",
+                    "label": "Oak",
                   },
                   Object {
-                    "key": "10",
-                    "label": "10",
+                    "key": "painted-wood",
+                    "label": "Painted Wood",
                   },
                   Object {
-                    "key": "11",
-                    "label": "11",
+                    "key": "pine",
+                    "label": "Pine",
                   },
                   Object {
-                    "key": "12",
-                    "label": "12",
+                    "key": "walnut",
+                    "label": "Walnut",
                   },
                 ],
                 "schemaType": "enum",
               },
               "group": "primary",
-              "id": "size",
-              "label": "Size (US)",
+              "id": "material",
+              "label": "Material",
               "queryParamNames": Array [
-                "pub_size",
+                "pub_material",
               ],
-              "type": "SelectMultipleFilter",
+              "type": "SelectSingleFilter",
             }
           }
           getHandleChangedValueFn={[Function]}
           idPrefix="SearchFiltersMobile"
           initialValues={[Function]}
           isDesktop={true}
-          key="SearchFiltersMobile.size"
+          key="SearchFiltersMobile.material"
           liveEdit={true}
           showAsPopup={false}
           urlQueryParams={Object {}}
@@ -140,62 +152,109 @@ exports[`SearchPageWithList matches snapshot 1`] = `
               "config": Object {
                 "options": Array [
                   Object {
-                    "key": "adidas",
-                    "label": "Adidas",
+                    "key": "black",
+                    "label": "Black",
                   },
                   Object {
-                    "key": "air_jordan",
-                    "label": "Air Jordan",
+                    "key": "blue",
+                    "label": "Blue",
                   },
                   Object {
-                    "key": "converse",
-                    "label": "Converse",
+                    "key": "green",
+                    "label": "Green",
                   },
                   Object {
-                    "key": "new_balance",
-                    "label": "New Balance",
+                    "key": "grey",
+                    "label": "Grey",
                   },
                   Object {
-                    "key": "nike",
-                    "label": "Nike",
+                    "key": "orange",
+                    "label": "Orange",
                   },
                   Object {
-                    "key": "puma",
-                    "label": "Puma",
+                    "key": "pink",
+                    "label": "Pink",
                   },
                   Object {
-                    "key": "ultraboost",
-                    "label": "Ultraboost",
+                    "key": "purple",
+                    "label": "Purple",
                   },
                   Object {
-                    "key": "vans",
-                    "label": "Vans",
+                    "key": "red",
+                    "label": "Red",
                   },
                   Object {
-                    "key": "yeezy",
-                    "label": "Yeezy",
+                    "key": "yellow",
+                    "label": "Yellow",
                   },
                   Object {
-                    "key": "other",
-                    "label": "Other",
+                    "key": "white",
+                    "label": "White",
                   },
                 ],
                 "schemaType": "enum",
               },
               "group": "primary",
-              "id": "brand",
-              "label": "Brand",
+              "id": "color",
+              "label": "Color",
               "queryParamNames": Array [
-                "pub_brand",
+                "pub_color",
               ],
-              "type": "SelectMultipleFilter",
+              "type": "SelectSingleFilter",
             }
           }
           getHandleChangedValueFn={[Function]}
           idPrefix="SearchFiltersMobile"
           initialValues={[Function]}
           isDesktop={true}
-          key="SearchFiltersMobile.brand"
+          key="SearchFiltersMobile.color"
+          liveEdit={true}
+          showAsPopup={false}
+          urlQueryParams={Object {}}
+        />
+        <FilterComponent
+          className="filter"
+          filterConfig={
+            Object {
+              "config": Object {
+                "options": Array [
+                  Object {
+                    "key": "bathroom",
+                    "label": "Bathroom",
+                  },
+                  Object {
+                    "key": "bedroom",
+                    "label": "Bedroom",
+                  },
+                  Object {
+                    "key": "dining",
+                    "label": "Dining",
+                  },
+                  Object {
+                    "key": "outdoor",
+                    "label": "Outdoor",
+                  },
+                  Object {
+                    "key": "office",
+                    "label": "Office",
+                  },
+                ],
+                "schemaType": "enum",
+              },
+              "group": "primary",
+              "id": "room",
+              "label": "Room",
+              "queryParamNames": Array [
+                "pub_room",
+              ],
+              "type": "SelectSingleFilter",
+            }
+          }
+          getHandleChangedValueFn={[Function]}
+          idPrefix="SearchFiltersMobile"
+          initialValues={[Function]}
+          isDesktop={true}
+          key="SearchFiltersMobile.room"
           liveEdit={true}
           showAsPopup={false}
           urlQueryParams={Object {}}
@@ -279,25 +338,37 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                 "config": Object {
                   "options": Array [
                     Object {
-                      "key": "men",
-                      "label": "Men",
+                      "key": "antique",
+                      "label": "Antique",
                     },
                     Object {
-                      "key": "women",
-                      "label": "Women",
+                      "key": "contemporary",
+                      "label": "Contemporary",
                     },
                     Object {
-                      "key": "kids",
-                      "label": "Kids",
+                      "key": "mid-century-modern",
+                      "label": "Mid-Century Modern",
+                    },
+                    Object {
+                      "key": "modern",
+                      "label": "Modern",
+                    },
+                    Object {
+                      "key": "traditional",
+                      "label": "Traditional",
+                    },
+                    Object {
+                      "key": "vintage",
+                      "label": "Vintage",
                     },
                   ],
                   "schemaType": "enum",
                 },
                 "group": "primary",
-                "id": "category",
-                "label": "Category",
+                "id": "style",
+                "label": "Style",
                 "queryParamNames": Array [
-                  "pub_category",
+                  "pub_style",
                 ],
                 "type": "SelectSingleFilter",
               }
@@ -305,7 +376,7 @@ exports[`SearchPageWithList matches snapshot 1`] = `
             getHandleChangedValueFn={[Function]}
             idPrefix="SearchFiltersMobile"
             initialValues={[Function]}
-            key="SearchFiltersMobile.category"
+            key="SearchFiltersMobile.style"
             liveEdit={true}
             showAsPopup={false}
             urlQueryParams={Object {}}
@@ -316,57 +387,57 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                 "config": Object {
                   "options": Array [
                     Object {
-                      "key": "4",
-                      "label": "4",
+                      "key": "bamboo",
+                      "label": "Bamboo",
                     },
                     Object {
-                      "key": "5",
-                      "label": "5",
+                      "key": "burch",
+                      "label": "Burch",
                     },
                     Object {
-                      "key": "6",
-                      "label": "6",
+                      "key": "cherry",
+                      "label": "Cherry",
                     },
                     Object {
-                      "key": "7",
-                      "label": "7",
+                      "key": "mahogany",
+                      "label": "Mahogany",
                     },
                     Object {
-                      "key": "8",
-                      "label": "8",
+                      "key": "maple",
+                      "label": "Maple",
                     },
                     Object {
-                      "key": "9",
-                      "label": "9",
+                      "key": "oak",
+                      "label": "Oak",
                     },
                     Object {
-                      "key": "10",
-                      "label": "10",
+                      "key": "painted-wood",
+                      "label": "Painted Wood",
                     },
                     Object {
-                      "key": "11",
-                      "label": "11",
+                      "key": "pine",
+                      "label": "Pine",
                     },
                     Object {
-                      "key": "12",
-                      "label": "12",
+                      "key": "walnut",
+                      "label": "Walnut",
                     },
                   ],
                   "schemaType": "enum",
                 },
                 "group": "primary",
-                "id": "size",
-                "label": "Size (US)",
+                "id": "material",
+                "label": "Material",
                 "queryParamNames": Array [
-                  "pub_size",
+                  "pub_material",
                 ],
-                "type": "SelectMultipleFilter",
+                "type": "SelectSingleFilter",
               }
             }
             getHandleChangedValueFn={[Function]}
             idPrefix="SearchFiltersMobile"
             initialValues={[Function]}
-            key="SearchFiltersMobile.size"
+            key="SearchFiltersMobile.material"
             liveEdit={true}
             showAsPopup={false}
             urlQueryParams={Object {}}
@@ -377,61 +448,106 @@ exports[`SearchPageWithList matches snapshot 1`] = `
                 "config": Object {
                   "options": Array [
                     Object {
-                      "key": "adidas",
-                      "label": "Adidas",
+                      "key": "black",
+                      "label": "Black",
                     },
                     Object {
-                      "key": "air_jordan",
-                      "label": "Air Jordan",
+                      "key": "blue",
+                      "label": "Blue",
                     },
                     Object {
-                      "key": "converse",
-                      "label": "Converse",
+                      "key": "green",
+                      "label": "Green",
                     },
                     Object {
-                      "key": "new_balance",
-                      "label": "New Balance",
+                      "key": "grey",
+                      "label": "Grey",
                     },
                     Object {
-                      "key": "nike",
-                      "label": "Nike",
+                      "key": "orange",
+                      "label": "Orange",
                     },
                     Object {
-                      "key": "puma",
-                      "label": "Puma",
+                      "key": "pink",
+                      "label": "Pink",
                     },
                     Object {
-                      "key": "ultraboost",
-                      "label": "Ultraboost",
+                      "key": "purple",
+                      "label": "Purple",
                     },
                     Object {
-                      "key": "vans",
-                      "label": "Vans",
+                      "key": "red",
+                      "label": "Red",
                     },
                     Object {
-                      "key": "yeezy",
-                      "label": "Yeezy",
+                      "key": "yellow",
+                      "label": "Yellow",
                     },
                     Object {
-                      "key": "other",
-                      "label": "Other",
+                      "key": "white",
+                      "label": "White",
                     },
                   ],
                   "schemaType": "enum",
                 },
                 "group": "primary",
-                "id": "brand",
-                "label": "Brand",
+                "id": "color",
+                "label": "Color",
                 "queryParamNames": Array [
-                  "pub_brand",
+                  "pub_color",
                 ],
-                "type": "SelectMultipleFilter",
+                "type": "SelectSingleFilter",
               }
             }
             getHandleChangedValueFn={[Function]}
             idPrefix="SearchFiltersMobile"
             initialValues={[Function]}
-            key="SearchFiltersMobile.brand"
+            key="SearchFiltersMobile.color"
+            liveEdit={true}
+            showAsPopup={false}
+            urlQueryParams={Object {}}
+          />
+          <FilterComponent
+            filterConfig={
+              Object {
+                "config": Object {
+                  "options": Array [
+                    Object {
+                      "key": "bathroom",
+                      "label": "Bathroom",
+                    },
+                    Object {
+                      "key": "bedroom",
+                      "label": "Bedroom",
+                    },
+                    Object {
+                      "key": "dining",
+                      "label": "Dining",
+                    },
+                    Object {
+                      "key": "outdoor",
+                      "label": "Outdoor",
+                    },
+                    Object {
+                      "key": "office",
+                      "label": "Office",
+                    },
+                  ],
+                  "schemaType": "enum",
+                },
+                "group": "primary",
+                "id": "room",
+                "label": "Room",
+                "queryParamNames": Array [
+                  "pub_room",
+                ],
+                "type": "SelectSingleFilter",
+              }
+            }
+            getHandleChangedValueFn={[Function]}
+            idPrefix="SearchFiltersMobile"
+            initialValues={[Function]}
+            key="SearchFiltersMobile.room"
             liveEdit={true}
             showAsPopup={false}
             urlQueryParams={Object {}}

@@ -35,84 +35,80 @@
 
 export const filters = [
   {
-    id: 'category',
-    label: 'Category',
+    id: 'style',
+    label: 'Style',
     type: 'SelectSingleFilter',
     group: 'primary',
-    queryParamNames: ['pub_category'],
+    queryParamNames: ['pub_style'],
     config: {
-      // Schema type is enum for SelectSingleFilter
       schemaType: 'enum',
-
-      // "key" is the option you see in Flex Console.
-      // "label" is set here for the UI only.
-      // Note: label is not added through the translation files
-      // to make filter customizations a bit easier.
       options: [
-        { key: 'men', label: 'Men' },
-        { key: 'women', label: 'Women' },
-        { key: 'kids', label: 'Kids' },
+        { key: 'antique', label: 'Antique' },
+        { key: 'contemporary', label: 'Contemporary' },
+        { key: 'mid-century-modern', label: 'Mid-Century Modern' },
+        { key: 'modern', label: 'Modern' },
+        { key: 'traditional', label: 'Traditional' },
+        { key: 'vintage', label: 'Vintage' },
       ],
     },
   },
   {
-    id: 'size',
-    label: 'Size (US)',
-    type: 'SelectMultipleFilter',
+    id: 'material',
+    label: 'Material',
+    type: 'SelectSingleFilter',
     group: 'primary',
-    queryParamNames: ['pub_size'],
+    queryParamNames: ['pub_material'],
     config: {
-      // Schema type options: 'enum', 'multi-enum'
-      // Both types can work so that user selects multiple values when filtering search results.
-      // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
-      // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
       schemaType: 'enum',
-
-      // "key" is the option you see in Flex Console.
-      // "label" is set here for the UI only.
-      // Note: label is not added through the translation files
-      // to make filter customizations a bit easier.
       options: [
-        { key: '4', label: '4' },
-        { key: '5', label: '5' },
-        { key: '6', label: '6' },
-        { key: '7', label: '7' },
-        { key: '8', label: '8' },
-        { key: '9', label: '9' },
-        { key: '10', label: '10' },
-        { key: '11', label: '11' },
-        { key: '12', label: '12' },
+        { key: 'bamboo', label: 'Bamboo' },
+        { key: 'burch', label: 'Burch' },
+        { key: 'cherry', label: 'Cherry' },
+        { key: 'mahogany', label: 'Mahogany' },
+        { key: 'maple', label: 'Maple' },
+        { key: 'oak', label: 'Oak' },
+        { key: 'painted-wood', label: 'Painted Wood' },
+        { key: 'pine', label: 'Pine' },
+        { key: 'walnut', label: 'Walnut' },
       ],
     },
   },
   {
-    id: 'brand',
-    label: 'Brand',
-    type: 'SelectMultipleFilter',
+    id: 'color',
+    label: 'Color',
+    type: 'SelectSingleFilter',
     group: 'primary',
-    queryParamNames: ['pub_brand'],
+    queryParamNames: ['pub_color'],
     config: {
-      // Schema type options: 'enum', 'multi-enum'
-      // Both types can work so that user selects multiple values when filtering search results.
-      // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
-      // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
       schemaType: 'enum',
-
-      // "key" is the option you see in Flex Console.
-      // "label" is set here for the UI only.
-      // Note: label is not added through the translation files
-      // to make filter customizations a bit easier.
       options: [
-        { key: 'adidas', label: 'Adidas' },
-        { key: 'air_jordan', label: 'Air Jordan' },
-        { key: 'converse', label: 'Converse' },
-        { key: 'new_balance', label: 'New Balance' },
-        { key: 'nike', label: 'Nike' },
-        { key: 'puma', label: 'Puma' },
-        { key: 'ultraboost', label: 'Ultraboost' },
-        { key: 'vans', label: 'Vans' },
-        { key: 'yeezy', label: 'Yeezy' },
-        { key: 'other', label: 'Other' },
+        { key: 'black', label: 'Black' },
+        { key: 'blue', label: 'Blue' },
+        { key: 'green', label: 'Green' },
+        { key: 'grey', label: 'Grey' },
+        { key: 'orange', label: 'Orange' },
+        { key: 'pink', label: 'Pink' },
+        { key: 'purple', label: 'Purple' },
+        { key: 'red', label: 'Red' },
+        { key: 'yellow', label: 'Yellow' },
+        { key: 'white', label: 'White' },
+      ],
+    },
+  },
+  {
+    id: 'room',
+    label: 'Room',
+    type: 'SelectSingleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_room'],
+    config: {
+      schemaType: 'enum',
+      options: [
+        { key: 'bathroom', label: 'Bathroom' },
+        { key: 'bedroom', label: 'Bedroom' },
+        { key: 'dining', label: 'Dining' },
+        { key: 'outdoor', label: 'Outdoor' },
+        { key: 'office', label: 'Office' },
       ],
     },
   },
@@ -216,5 +212,5 @@ export const sortConfig = {
 export const listing = {
   // These should be listing details from public data with schema type: enum
   // SectionDetailsMaybe component shows these on listing page.
-  enumFieldDetails: ['size', 'brand', 'category'],
+  enumFieldDetails: ['material', 'color', 'style'],
 };
