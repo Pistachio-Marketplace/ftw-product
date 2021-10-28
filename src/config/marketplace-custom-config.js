@@ -82,6 +82,7 @@ export const filters = [
     config: {
       schemaType: 'enum',
       options: [
+        { key: 'natural', label: 'Natural' },
         { key: 'black', label: 'Black' },
         { key: 'blue', label: 'Blue' },
         { key: 'green', label: 'Green' },

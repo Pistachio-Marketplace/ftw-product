@@ -53,15 +53,16 @@ const EditListingDetailsPanel = props => {
           description,
           style: publicData.style,
           material: publicData.material,
-          brand: publicData.brand,
+          color: publicData.color,
+          room: publicData.room,
         }}
         saveActionMsg={submitButtonText}
         onSubmit={values => {
-          const { title, description, style, material, brand } = values;
+          const { title, description, style, material, color, room } = values;
           const updateValues = {
             title: title.trim(),
             description,
-            publicData: { style, material, brand },
+            publicData: { style, material, color, room },
           };
 
           onSubmit(updateValues);
